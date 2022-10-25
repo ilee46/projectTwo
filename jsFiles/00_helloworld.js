@@ -19,6 +19,37 @@ function wrongAnswer() {
     console.log(lives)
 }
 
-function formToMemory() {
-    
+function buttonToMemory(identifier) {
+    if (identifier == 1)
+        buttonID = 'BTN1'
+    else if (identifier == 2)
+        buttonID = 'BTN2'
+    else if (identifier == 3)
+        buttonID = 'BTN3'
+    else if (identifier == 4)
+        buttonID = 'BTN4'
+    else if (identifier == 5)
+        buttonID = 'BTN5'
+    else if (identifier == 6)
+        buttonID = 'BTN6'
+    else if (identifier == 7)
+        buttonID = 'BTN7'
+    else if (identifier == 8)
+        buttonID = 'BTN8'
+    else if (identifier == 9)
+        buttonID = 'BTN9'
+    else if (identifier == 10)
+        buttonID = 'BTN10'
+    else if (identifier == 11)
+        buttonID = 'BTN11'
+    else if (identifier == 12)
+        buttonID = 'BTN12'
+
+    buttonValue = document.getElementById(buttonID)
+    console.log(buttonValue)
+    sessionStorage.setItem(buttonID, `${buttonValue.innerText}`);
+}
+
+function submitToMemory(key, value) {
+    sessionStorage.setItem(key, true);
 }
