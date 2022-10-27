@@ -54,7 +54,12 @@ function submitToMemory(key, value) {
     sessionStorage.setItem(key, true);
 }
 
-function createKey() {
+function makeKey() {
     sessionStorage.setItem("answerKey", true);
     console.log(sessionStorage)
 }
+
+function clearMem(){
+    sessionStorage.clear();
+}
+
