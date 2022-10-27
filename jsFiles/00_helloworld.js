@@ -17,6 +17,9 @@ function changeBackground(points) {
     lives = sessionStorage.getItem("Lives")
     totalPoints = totalPoints + points;
     sessionStorage.setItem("Score", totalPoints);
+    if (totalPoints == 3000) {
+        window.location.href = "victory.html"    
+    }
     console.log(totalPoints)
     console.log(lives)
 }
@@ -27,6 +30,9 @@ function wrongAnswer() {
     lives = sessionStorage.getItem("Lives")
     lives = lives - 1;
     sessionStorage.setItem("Lives", lives);
+    if (lives == 0) {
+        window.location.href = "gameover.html"    
+    }
     console.log(totalPoints)
     console.log(lives)
 }
