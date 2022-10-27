@@ -46,10 +46,15 @@ function buttonToMemory(identifier) {
         buttonID = 'BTN12'
 
     buttonValue = document.getElementById(buttonID)
-    console.log(buttonValue)
     sessionStorage.setItem(buttonID, `${buttonValue.innerText}`);
+    console.log(sessionStorage)
 }
 
 function submitToMemory(key, value) {
     sessionStorage.setItem(key, true);
+}
+
+function createKey() {
+    sessionStorage.setItem("answerKey", true);
+    console.log(sessionStorage)
 }
