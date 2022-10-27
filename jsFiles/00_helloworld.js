@@ -56,7 +56,8 @@ function submitToMemory(key, value) {
 
 function makeKey() {
     sessionStorage.setItem("answerKey", true);
-    console.log(sessionStorage)
+    sessionStorage.setItem("Lives", lives);
+    sessionStorage.setItem("Score", totalPoints);
 }
 
 function clearMem(){
