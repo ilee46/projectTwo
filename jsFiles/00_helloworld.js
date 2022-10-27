@@ -1,20 +1,32 @@
-totalPoints = 0;
-lives = 3;
 function setup() {
     createCanvas(windowWidth, windowHeight);
+}
+
+function init() {
+    lives = 3;
+    totalPoints = 0;
+    sessionStorage.setItem("Lives", lives);
+    sessionStorage.setItem("Score", totalPoints);
 }
 
 function changeBackground(points) {
     document.body.style.background = "green"
     console.log("Mouse clicked")
+    totalPoints = sessionStorage.getItem("Score")
+    totalPoints = parseInt(totalPoints)
+    lives = sessionStorage.getItem("Lives")
     totalPoints = totalPoints + points;
+    sessionStorage.setItem("Score", totalPoints);
     console.log(totalPoints)
     console.log(lives)
 }
 
 function wrongAnswer() {
     document.body.style.background = "red"
-    lives--;
+    totalPoints = sessionStorage.getItem("Score")
+    lives = sessionStorage.getItem("Lives")
+    lives = lives - 1;
+    sessionStorage.setItem("Lives", lives);
     console.log(totalPoints)
     console.log(lives)
 }
