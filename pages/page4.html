@@ -14,24 +14,24 @@
     <h1>These are 300 point questions</h1>
     <h2>What was the first project Ian did with an Arduino?</h2>
     <ul>
-        <button onclick="wrongAnswer()">LCD Game</button>
-        <button onclick="wrongAnswer()">Sonar Sensor</button>
-        <button id='BTN7' onclick="changeBackground(300), buttonToMemory(7), makeKey()">Traffic Light</button>
-        <button onclick="wrongAnswer()">ADC/PWM Motor</button>
+        <button id ='wrg19' onclick="wrongAnswer(), disableButton(this)">LCD Game</button>
+        <button id='wrg20' onclick="wrongAnswer(), disableButton(this)">Sonar Sensor</button>
+        <button id='BTN7' onclick="changeBackground(300), buttonToMemory(7), makeKey(), disableButton(BTN7), disableButton(wrg19), disableButton(wrg20), disableButton(wrg21)">Traffic Light</button>
+        <button id='wrg21' onclick="wrongAnswer(), disableButton(this)">ADC/PWM Motor</button>
     </ul>
     <h2>What programming language was Ian first introduced to?</h2>
     <ul>
-        <button id='BTN8' onclick="changeBackground(300), buttonToMemory(8), makeKey()">Java</button>
-        <button onclick="wrongAnswer()">C++</button>
-        <button onclick="wrongAnswer()">Swift</button>
-        <button onclick="wrongAnswer()">Python</button>
+        <button id='BTN8' onclick="changeBackground(300), buttonToMemory(8), makeKey(), disableButton(BTN8), disableButton(wrg22), disableButton(wrg23), disableButton(wrg24)">Java</button>
+        <button id='wrg22' onclick="wrongAnswer(), disableButton(this)">C++</button>
+        <button id='wrg23' onclick="wrongAnswer(), disableButton(this)">Swift</button>
+        <button id='wrg24' onclick="wrongAnswer(), disableButton(this)">Python</button>
     </ul>
     <h2>What electronic tool was Ian the most proficent with before college?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Oscilloscope</button>
-        <button id='BTN9' onclick="changeBackground(300), buttonToMemory(9), makeKey()">Multimeter</button>
-        <button onclick="wrongAnswer()">Soldering Iron</button>
-        <button onclick="wrongAnswer()">Breadboard</button>
+        <button id='wrg25' onclick="wrongAnswer(), disableButton(this)">Oscilloscope</button>
+        <button id='BTN9' onclick="changeBackground(300), buttonToMemory(9), makeKey(), disableButton(BTN9), disableButton(wrg25), disableButton(wrg26), disableButton(wrg27)">Multimeter</button>
+        <button id='wrg26' onclick="wrongAnswer(), disableButton(this)">Soldering Iron</button>
+        <button id='wrg27' onclick="wrongAnswer(), disableButton(this)">Breadboard</button>
     </ul>
 
     <ul>

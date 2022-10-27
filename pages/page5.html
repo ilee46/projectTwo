@@ -14,24 +14,24 @@
     <h1>These are 400 point questions</h1>
     <h2>What was the first basic engineering concept Ian learned?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Moore's Law</button>
-        <button onclick="wrongAnswer()">Kirchhoff's Current Law</button>
-        <button onclick="wrongAnswer()">Kirchhoff's Voltage Law</button>
-        <button id='BTN10' onclick="changeBackground(400), buttonToMemory(10), makeKey()">Ohm's Law</button>
+        <button id='wrg28' onclick="wrongAnswer(), disableButton(this)">Moore's Law</button>
+        <button id='wrg29' onclick="wrongAnswer(), disableButton(this)">Kirchhoff's Current Law</button>
+        <button id='wrg30' onclick="wrongAnswer(), disableButton(this)">Kirchhoff's Voltage Law</button>
+        <button id='BTN10' onclick="changeBackground(400), buttonToMemory(10), makeKey(), disableButton(BTN10), disableButton(wrg28), disableButton(wrg29), disableButton(wrg30)">Ohm's Law</button>
     </ul>
     <h2>What engineering concept did Ian NOT have a hard time understanding?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Fundamental Theorem of Calculus</button>
-        <button onclick="wrongAnswer()">Coulomb's Law</button>
-        <button id='BTN11' onclick="changeBackground(400), buttonToMemory(11), makeKey()">Karnaugh Map</button>
-        <button onclick="wrongAnswer()">Free Energy</button>
+        <button id='wrg31' onclick="wrongAnswer(), disableButton(this)">Fundamental Theorem of Calculus</button>
+        <button id='wrg32' onclick="wrongAnswer(), disableButton(this)">Coulomb's Law</button>
+        <button id='BTN11' onclick="changeBackground(400), buttonToMemory(11), makeKey(), disableButton(BTN11), disableButton(wrg31), disableButton(wrg32), disableButton(wrg33)">Karnaugh Map</button>
+        <button id='wrg33' onclick="wrongAnswer(), disableButton(this)">Free Energy</button>
     </ul>
     <h2>What electronic compnent did Ian have a hard time with until his third year of undergraduate studies?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Diode</button>
-        <button id='BTN12' onclick="changeBackground(400), buttonToMemory(12), makeKey()">Operational Amplifier</button>
-        <button onclick="wrongAnswer()">Inductor</button>
-        <button onclick="wrongAnswer()">Capacitor</button>
+        <button id='wrg34' onclick="wrongAnswer(), disableButton(this)">Diode</button>
+        <button id='BTN12' onclick="changeBackground(400), buttonToMemory(12), makeKey(), disableButton(BTN12), disableButton(wrg34), disableButton(wrg35), disableButton(wrg36)">Operational Amplifier</button>
+        <button id='wrg35' onclick="wrongAnswer(), disableButton(this)">Inductor</button>
+        <button id='wrg36' onclick="wrongAnswer(), disableButton(this)">Capacitor</button>
     </ul>
 
     <ul>

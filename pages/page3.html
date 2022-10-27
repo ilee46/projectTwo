@@ -14,24 +14,24 @@
     <h1>These are 200 point questions</h1>
     <h2>What was the first video game that MrMasterIan ever played?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Crash Bandicoot</button>
-        <button onclick="wrongAnswer()">Minecraft</button>
-        <button id='BTN4' onclick="changeBackground(200), buttonToMemory(4), makeKey()">Space Invaders</button>
-        <button onclick="wrongAnswer()">Pac-Man</button>
+        <button id='wrg10' onclick="wrongAnswer(), disableButton(this)">Crash Bandicoot</button>
+        <button id='wrg11' onclick="wrongAnswer(), disableButton(this)">Minecraft</button>
+        <button id='BTN4' onclick="changeBackground(200), buttonToMemory(4), makeKey(), disableButton(BTN4), disableButton(wrg10), disableButton(wrg11), disableButton(wrg12)">Space Invaders</button>
+        <button id='wrg12' onclick="wrongAnswer(), disableButton(this)">Pac-Man</button>
     </ul>
     <h2>Which UIC family member introduced MrMasterIan to his career interests?</h2>
     <ul>
-        <button id='BTN5' onclick="changeBackground(200), buttonToMemory(5), makeKey()">Daniel Sandin</button>
-        <button onclick="wrongAnswer()">Wenjing Rao</button>
-        <button onclick="wrongAnswer()">Vladimir Goncharoff</button>
-        <button onclick="wrongAnswer()">Vahe Caliskan</button>
+        <button id='BTN5' onclick="changeBackground(200), buttonToMemory(5), makeKey(), disableButton(BTN5), disableButton(wrg13), disableButton(wrg14), disableButton(wrg15)">Daniel Sandin</button>
+        <button id='wrg13' onclick="wrongAnswer(), disableButton(this)">Wenjing Rao</button>
+        <button id='wrg14' onclick="wrongAnswer(), disableButton(this)">Vladimir Goncharoff</button>
+        <button id='wrg15' onclick="wrongAnswer(), disableButton(this)">Vahe Caliskan</button>
     </ul>
     <h2>Where was Ian introduced to the Arduino?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Harper Society of Engineers</button>
-        <button onclick="wrongAnswer()">CyberPatriot</button>
-        <button onclick="wrongAnswer()">Engineering Design Team</button>
-        <button id='BTN6' onclick="changeBackground(200), buttonToMemory(6), makeKey()">Discover IT</button>
+        <button id='wrg16' onclick="wrongAnswer(), disableButton(this)">Harper Society of Engineers</button>
+        <button id='wrg17' onclick="wrongAnswer(), disableButton(this)">CyberPatriot</button>
+        <button id='wrg18' onclick="wrongAnswer(), disableButton(this)">Engineering Design Team</button>
+        <button id='BTN6' onclick="changeBackground(200), buttonToMemory(6), makeKey(), disableButton(BTN6), disableButton(wrg16), disableButton(wrg17), disableButton(wrg18)">Discover IT</button>
     </ul>
 
     <ul>

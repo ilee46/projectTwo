@@ -14,24 +14,24 @@
     <h1>These are 100 point questions</h1>
     <h2>When did Ian start the hobby that sparked his career interest?</h2>
     <ul>
-        <button onclick="wrongAnswer()">August 9, 2001</button>
-        <button onclick="wrongAnswer()">May 24, 2019</button>
-        <button id='BTN1' onclick="changeBackground(100), buttonToMemory(1), makeKey()">November 25, 2015</button>
-        <button onclick="wrongAnswer()">January 25, 2015</button>
+        <button id='wrg1' onclick="wrongAnswer(), disableButton(this)">August 9, 2001</button>
+        <button id='wrg2' onclick="wrongAnswer(), disableButton(this)">May 24, 2019</button>
+        <button id='BTN1' onclick="changeBackground(100), buttonToMemory(1), makeKey(), disableButton(BTN1), disableButton(wrg1), disableButton(wrg2), disableButton(wrg3)">November 25, 2015</button>
+        <button id='wrg3' onclick="wrongAnswer(), disableButton(this)">January 25, 2015</button>
     </ul>
     <h2>What did Ian study while in college?</h2>
     <ul>
-        <button onclick="wrongAnswer()">Electrical Engineering</button>
-        <button id='BTN2' onclick="changeBackground(100), buttonToMemory(2), makeKey()">Computer Engineering</button>
-        <button onclick="wrongAnswer()">Engineering Physics</button>
-        <button onclick="wrongAnswer()">Computer Science</button>
+        <button id='wrg4' onclick="wrongAnswer(), disableButton(this)">Electrical Engineering</button>
+        <button id='BTN2' onclick="changeBackground(100), buttonToMemory(2), makeKey(), disableButton(BTN2), disableButton(wrg4), disableButton(wrg5), disableButton(wrg6)">Computer Engineering</button>
+        <button id='wrg5' onclick="wrongAnswer(), disableButton(this)">Engineering Physics</button>
+        <button id='wrg6'onclick="wrongAnswer(), disableButton(this)">Computer Science</button>
     </ul>
     <h2>What is the name of Ian's hobby</h2>
     <ul>
-        <button onclick="wrongAnswer()">INL Rules</button>
-        <button onclick="wrongAnswer()">ENGINEERING IS MY LOVE</button>
-        <button onclick="wrongAnswer()">MMI</button>
-        <button id='BTN3' onclick="changeBackground(100), buttonToMemory(3), makeKey()">MrMasterIan</button>
+        <button id='wrg7' onclick="wrongAnswer(), disableButton(this)">INL Rules</button>
+        <button id='wrg8' onclick="wrongAnswer(), disableButton(this)">ENGINEERING IS MY LOVE</button>
+        <button id='wrg9' onclick="wrongAnswer(), disableButton(this)">MMI</button>
+        <button id='BTN3' onclick="changeBackground(100), buttonToMemory(3), makeKey(), disableButton(BTN3), disableButton(wrg7), disableButton(wrg8), disableButton(wrg9)"">MrMasterIan</button>
     </ul>
 
     <ul>
