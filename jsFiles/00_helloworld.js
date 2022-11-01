@@ -100,7 +100,7 @@ function clearMem(){
 function disableButton(button) {
     button.disabled = true;
     sessionStorage.setItem(button, true);
-    console.log(sessionStorage);
+    console.log(buttonValue);
 }
 
 function checkIfOff(identifier) {
