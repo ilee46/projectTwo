@@ -84,4 +84,12 @@ function clearMem(){
 
 function disableButton(button) {
     button.disabled = true;
+    sessionStorage.setItem(button, true);
+}
+
+function checkIfOff(button) {
+    offVal = sessionStorage.getItem(button)
+    if (offVal == true) {
+        button.disabled = true;
+    }
 }
