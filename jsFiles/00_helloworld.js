@@ -18,22 +18,7 @@ function changeBackground(points) {
     totalPoints = totalPoints + points;
     sessionStorage.setItem("Score", totalPoints);
     if (totalPoints == 3000) {
-        window.location.href = "victory.html"    
-    }
-    console.log(totalPoints)
-    console.log(lives)
-}
-
-function victoryBackground() {
-    document.body.style.background = "green"
-    console.log("Mouse clicked")
-    totalPoints = sessionStorage.getItem("Score")
-    totalPoints = parseInt(totalPoints)
-    lives = sessionStorage.getItem("Lives")
-    totalPoints = totalPoints + points;
-    sessionStorage.setItem("Score", totalPoints);
-    if (totalPoints == 3000) {
-        window.location.href = "victory.html"    
+        window.location.href = "victory.html"
     }
     console.log(totalPoints)
     console.log(lives)
@@ -79,6 +64,7 @@ function buttonToMemory(identifier) {
         buttonID = 'BTN12'
 
     buttonValue = document.getElementById(buttonID)
+    console.log(buttonValue)
     sessionStorage.setItem(buttonID, `${buttonValue.innerText}`);
     console.log(sessionStorage)
 }
@@ -100,7 +86,6 @@ function clearMem(){
 function disableButton(button) {
     button.disabled = true;
     sessionStorage.setItem(button, true);
-    console.log(buttonValue);
 }
 
 function checkIfOff(identifier) {
@@ -200,6 +185,7 @@ function checkIfOff(identifier) {
         buttonID = wrg35
     else if (identifier == 'wrg36')
         buttonID = wrg36
+    buttonValue = document.getElementById(buttonID)
     offVal = sessionStorage.getItem(buttonID);
     if (offVal == true) {
         buttonID.disabled = true;
