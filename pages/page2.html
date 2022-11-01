@@ -10,14 +10,14 @@
 
 </head>
 
-<body>
+<body onload="checkIfOff('wrg1'); checkIfOff('wrg2'); checkIfOff('wrg3'); checkIfOff('BTN1'); checkIfOff('wrg4'); checkIfOff('wrg5'); checkIfOff('wrg6'); checkIfOff('BTN2'); checkIfOff('wrg7'); checkIfOff('wrg8'); checkIfOff('wrg9'); checkIfOff('BTN3')">
     <h1>These are 100 point questions</h1>
     <h2>When did Ian start the hobby that sparked his career interest?</h2>
     <ul>
-        <button id='wrg1' onclick="checkIfOff(wrg1), wrongAnswer(), disableButton(wrg1)">August 9, 2001</button>
-        <button id='wrg2' onclick="checkIfOff(wrg2), wrongAnswer(), disableButton(wrg2)">May 24, 2019</button>
-        <button id='BTN1' onclick="checkIfOff(wrg1), checkIfOff(wrg2), checkIfOff(wrg3), changeBackground(100), buttonToMemory(1), makeKey(), disableButton(BTN1), disableButton(wrg1), disableButton(wrg2), disableButton(wrg3)">November 25, 2015</button>
-        <button id='wrg3' onclick="checkIfOff(wrg3), wrongAnswer(), disableButton(wrg3)">January 25, 2015</button>
+        <button id='wrg1' onclick="wrongAnswer(), disableButton(wrg1)">August 9, 2001</button>
+        <button id='wrg2' onclick="wrongAnswer(), disableButton(wrg2)">May 24, 2019</button>
+        <button id='BTN1' onclick="changeBackground(100), buttonToMemory(1), makeKey(), disableButton(BTN1), disableButton(wrg1), disableButton(wrg2), disableButton(wrg3)">November 25, 2015</button>
+        <button id='wrg3' onclick="wrongAnswer(), disableButton(wrg3)">January 25, 2015</button>
     </ul>
     <h2>What did Ian study while in college?</h2>
     <ul>
