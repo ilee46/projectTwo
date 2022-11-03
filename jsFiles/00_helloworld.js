@@ -10,7 +10,7 @@ function init() {
 }
 
 function changeBackground(points) {
-    document.body.style.background = "green"
+    document.body.style.backgroundImage = "url('../images/correct.jpg')"
     console.log("Mouse clicked")
     totalPoints = sessionStorage.getItem("Score")
     totalPoints = parseInt(totalPoints)
@@ -25,7 +25,7 @@ function changeBackground(points) {
 }
 
 function wrongAnswer() {
-    document.body.style.background = "red"
+    document.body.style.backgroundImage = "url('../images/wrong.jpg')"
     totalPoints = sessionStorage.getItem("Score")
     lives = sessionStorage.getItem("Lives")
     lives = lives - 1;
