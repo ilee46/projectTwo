@@ -10,10 +10,28 @@ body {
 	0% {
 		background: #ff0000;
 	}
-	50% {
+    12.5% {
+        background: #ff8000;
+    }
+    25% {
+        background: #ffff00;
+    }
+    37.5% {
 		background: #00ff00;
+    }
+	50% {
+        background: #00ffff;
 	}
-	100% {
+	62.5% {
 		background: #0000ff;
 	}
+    75% {
+        background: #9d00ff;
+    }
+    87.5% {
+        background: #ff00ff;
+    }
+    100% {
+        background: #f61c7e;
+    }
 }
